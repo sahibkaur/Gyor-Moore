@@ -62,7 +62,7 @@ ul a{
 .content{
 	display: flex;
 	flex-direction: column;
-	/*align-items: center;*/
+	align-items: center;
 	justify-content: center;
 	margin:auto;
 	text-align: center;
@@ -86,11 +86,8 @@ ul a{
 .scroll{
 	position: absolute;
 	margin-top: 100vh;
+	width: 100%;
 	position: absolute;
-	margin-left: auto;
-	margin-right: auto;
-	left: 0;
-	right: 0;
 	
 }
 
@@ -114,3 +111,11 @@ nav li a:hover{
 	color:white;
 }
 
+@media screen and (min-width: 800px){
+	.left{
+		align-self: flex-start;
+	}
+	.right{
+		align-self: flex-end;
+	}
+}
