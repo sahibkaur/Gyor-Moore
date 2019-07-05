@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="Stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+    <title>Gyor Moore</title>
+</head>
+<body style="background-color: black; -webkit-transition: background 0.5s ease-out; 
+	    transition: background 0.5s ease-out;
+	   -moz-transition: background 0.5s ease-out;">
+	<div class="fixed">
+		<header>
+		<div class="top-fixed">
+			<div class="logo">
+				<h1>Gyor</h1>
+			</div>
+			<div class="hamburger">
+				<i class="fa fa-bars fa-lg" aria-hidden="true"></i>
+			</div>
+			<div class="cross">
+				<i class="fas fa-times"></i>
+			</div>
+			<nav>
+				<ul>
+					<li>
+						<a href="#">Work</a>
+					</li>
+					<li>
+						<a href="#">Services</a>
+					</li>
+					<li>
+						<a href="#">About</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+		<section>
+				<div class="content">
+					<h1 class="tagline">Creating change 
+						<br>
+						through design</h1>
+					<p>Digital Design & Strategy for Progressive Brands</p>
+				</div>
+			</section>
+	</div>
+		<main>
+			<section class="scroll">
+				<div class="content">
+					<div class="card">
+						<a href="#" onmouseover="ColorChange('#66655E')" onmouseout="ChangeBack()">
+							<img src="images/grey.jpg" style="height:600px; width:400px;"><!-- Photo by Peter Sjo on Unsplash -->
+						</a>
+						<div class="text">
+							<h3>SLowing fast fashion for only the flyest</h3>
+							<p>Concepting Webdesign #Curation<br>
+							#Awareness</p>
+						</div>
+					</div>
+					<div class="card">
+						<a href="#" onmouseover="ColorChange('#564A4B')" onmouseout="ChangeBack()">
+							<img src="images/red-hair.jpg" style="height:400px; width:400px;"><!-- Photo by Allef Vinicius on Unsplash -->
+						</a>
+						<div class="text">
+							<h3>Creating Awareness with nederlands filmacademie</h3>
+							<p>Branding, Webdesign, #Awareness</p>
+						</div>
+					</div>
+					<div class="card">
+						<a href="#" onmouseover="ColorChange('#e0e2e5')" onmouseout="ChangeBack()"><!-- #262357 -->
+							<img src="images/umbrella.jpg" style="height:500px; width:400px;"><!-- Photo by Verne Ho on Unsplash -->
+						</a>
+						<div class="text">
+							<h3>Empowering independent artists for TWOL24</h3>
+							<p>Concepting, Webdesign, #SlowFashion<br>
+							#Awareness #Curation</p>
+						</div>
+					</div>
+					<div class="card">
+						<a href="#" onmouseover="ColorChange('#262357')" onmouseout="ChangeBack()"><!-- #005558 -->
+							<img src="images/man-in-blue.jpg" style="height:500px; width:400px;"><!-- Photo by Lucas Sankey on Unsplash -->
+						</a>
+						<div class="text">
+							<h3>A creative community for parlour NY</h3>
+							<p>Branding, Webdesign, Curation</p>
+						</div>
+					</div>
+					<div class="card">
+						<a href="#" onmouseover="ColorChange('#564A4B')" onmouseout="ChangeBack()"><!-- #063C2C -->
+							<img src="images/mask-girl.jpg" style="height:400px; width:400px;"><!-- Photo by tony hernandez on Unsplash -->
+						</a>
+						<div class="text">
+							<h3>Make extraordinary art accessible for blend gallery</h3>
+							<p>Webdesign, Curation</p>
+						</div>
+					</div>
+					<div class="card">
+						<a href="#" onmouseover="ColorChange('#005558')" onmouseout="ChangeBack()"><!-- #063C2C -->
+							<img src="images/app.jpg" style="height:400px; width:400px;"><!-- Photo by Hans Vivek on Unsplash -->
+						</a>
+						<div class="text">
+							<h3>Social media</h3>
+							<p>Mobile, UX, Prototyping</p>
+						</div>
+					</div>
+					<div class="card">
+						<a href="#" onmouseover="ColorChange('#063C2C')" onmouseout="ChangeBack()"><!--  -->
+							<img src="images/olive-green-bag.jpg" style="height:400px; width:400px;"><!-- Photo by Lauren Fleischmann on Unsplash -->
+						</a>
+						<div class="text">
+							<h3>Pack your bags and let's go travelling</h3>
+							<p>Travelling, Team</p>
+						</div>
+					</div>
+			</div>
+			</section>
+		</main>
+		<script>
+
+			function ColorChange(color){
+				console.log(color);
+				var back = document.querySelector('body');
+				back.style.backgroundColor=color;
+			}
+			function ChangeBack(){
+				var back = document.querySelector('body');
+				back.style.backgroundColor="#000";
+			}
+
+		</script>
+		<script src="main.js"></script>
+</body>
+</html>
